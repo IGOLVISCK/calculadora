@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://github.com/IGOLVISCK" ><i class="fa-brands fa-github icon"></i></a>
+        <a href="https://www.linkedin.com/in/igor-reis-9313a233b/"><i class="fa-brands fa-linkedin icon"></i></a>
+        <a href="mailto:igorsreis2017@gmail.com"><i class="fa-solid fa-envelope icon"></i></a>
+    </header>
+
+    <main>
+        <div class="calculadora">
+            <h2 style="text-align: center;">Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="btn" onclick="clean()">C</button></td>
+                    <td><button class="btn" onclick="apagar()"><</button></td>
+                    <td><button class="btn" onclick="insert('/')">/</button></td>
+                    <td><button class="btn" onclick="insert('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert(7)">7</button></td>
+                    <td><button class="btn" onclick="insert(8)">8</button></td>
+                    <td><button class="btn" onclick="insert(9)">9</button></td>
+                    <td><button class="btn" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert(4)">4</button></td>
+                    <td><button class="btn" onclick="insert(5)">5</button></td>
+                    <td><button class="btn" onclick="insert(6)">6</button></td>
+                    <td><button class="btn" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert(1)" >1</button></td>
+                    <td><button class="btn" onclick="insert(2)">2</button></td>
+                    <td><button class="btn" onclick="insert(3)">3</button></td>
+                    <td rowspan="2"><button class="btn" style="height: 98px;" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btn" style="width: 98px;" onclick="insert(0)">0</button></td>
+                    <td><button class="btn" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer> 
+        <p>&copy; desenvolvido por Igor Reis</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/13b945b1e7.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
